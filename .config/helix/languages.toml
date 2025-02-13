@@ -1,0 +1,34 @@
+# Go
+[[language]]
+name = "go"
+file-types = ["go"]
+scope = "source.go"
+auto-format = true
+formatter = { command = "go", args = ["fmt", "./..."] }
+
+# Lua
+[[language]]
+name = "lua"
+file-types = ["lua"]
+scope = "source.lua"
+auto-format = true
+formatter = { command = "lua-format" }
+
+# Ruby
+[[language]]
+name = "ruby"
+file-types = ["ruby"]
+scope = "source.ruby"
+auto-format = true
+formatter = { command = "rubocop" }
+
+# C
+[[language]]
+name = "c"
+file-types = ["c", "h"]
+scope = "source.c"
+auto-format = true
+formatter = { command = "clang-format", args = [] }
+
+[language-server.clangd]
+command = "clangd"
