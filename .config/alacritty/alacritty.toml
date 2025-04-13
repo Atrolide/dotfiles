@@ -1,0 +1,16 @@
+[window]
+decorations = "Full"
+blur        = true
+opacity     = 0.7
+
+[font]
+size   = 14.0
+
+[font.bold]
+family = "mononoki Nerd Font Propo"
+style = "Bold"
+
+[font.normal]
+family = "mononoki Nerd Font"
+style = "Regular"
+
