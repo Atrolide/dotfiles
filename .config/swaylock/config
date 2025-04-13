@@ -1,0 +1,60 @@
+ignore-empty-password
+
+# Font 
+font="mononoki Nerd Font"
+
+# Clock display format
+clock
+timestr=%H:%M:%S
+datestr=%Y/%m/%d
+
+# Display current wallpaper as background
+image=~/Pictures/Makima.jpg
+
+
+effect-blur=20x2
+# effect-pixelate=15
+
+# Show indicator on idle 
+indicator
+indicator-caps-lock
+indicator-radius=200
+indicator-thickness=20
+
+# Custom colors
+key-hl-color=00000066
+separator-color=00000000
+
+inside-color=00000033
+inside-clear-color=55ff5533
+inside-caps-lock-color=ffff5533
+inside-ver-color=5555ff33
+inside-wrong-color=ff555533
+
+ring-color=ffffff
+ring-clear-color=55ff55
+ring-caps-lock-color=ffff55
+ring-ver-color=5555ff
+ring-wrong-color=ff5555
+
+line-color=00000000
+line-clear-color=55ff55FF
+line-caps-lock-color=ffff55FF
+line-ver-color=5555ffFF
+line-wrong-color=ff5555FF
+
+text-color=ffffff
+text-clear-color=55ff55
+text-ver-color=5555ff
+text-wrong-color=ff5555
+
+bs-hl-color=ffffff
+caps-lock-key-hl-color=ffff55
+caps-lock-bs-hl-color=ffff55
+text-caps-lock-color=ffff55
+
+
+# Other effects
+show-failed-attempts
+time-effects
+fade-in=3
