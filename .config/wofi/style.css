@@ -1,0 +1,40 @@
+window {
+    margin: 0px;
+    border: 2px solid white; /* Changed to white */
+    background-color: rgba(40, 42, 54, 0.7); /* Semi-transparent */
+    backdrop-filter: blur(10px); /* Blur effect */
+}
+
+#input {
+    margin: 5px;
+    border: none;
+    color: #f8f8f2;
+    background-color: rgba(68, 71, 90, 0.7); /* Semi-transparent */
+}
+
+#inner-box {
+    margin: 5px;
+    border: none;
+    background-color: transparent; /* Fully transparent */
+}
+
+#outer-box {
+    margin: 5px;
+    border: none;
+    background-color: transparent; /* Fully transparent */
+}
+
+#scroll {
+    margin: 0px;
+    border: none;
+}
+
+#text {
+    margin: 5px;
+    border: none;
+    color: #f8f8f2;
+}
+
+#entry:selected {
+    background-color: rgba(68, 71, 90, 0.7); /* Semi-transparent */
+}
