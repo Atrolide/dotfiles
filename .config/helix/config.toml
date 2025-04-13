@@ -1,0 +1,92 @@
+# Theme configuration
+theme = "ayu_dark"                # Sets the color theme of the editor
+
+# Editor settings
+[editor]
+bufferline   = "multiple"          # Enables multiple bufferlines (tabs)
+true-color   = true                # Enables true color support in the editor
+color-modes  = true                # Enables color modes (e.g., normal, insert)
+
+
+# Status line configuration
+[editor.statusline]
+left        = ["mode", "spacer", "version-control", "spacer", "diagnostics"]       # Left section of the status line (mode, version control, diagnostics)
+center      = ["read-only-indicator", "file-name", "file-modification-indicator"]  # Center section (file name, modification status)
+right       = ["position", "total-line-numbers", "file-type", "file-line-ending"]  # Right section (file position, total lines, file type, line ending)
+
+mode.normal = "NORMAL"            # Status line text for normal mode
+mode.insert = "INSERT"            # Status line text for insert mode
+mode.select = "VISUAL"            # Status line text for select mode
+
+# Cursor shape configuration for different modes
+[editor.cursor-shape]
+insert = "bar"                   # Cursor shape in insert mode (bar)
+normal = "block"                 # Cursor shape in normal mode (block)
+select = "underline"             # Cursor shape in select mode (underline)
+
+# File picker settings (used when opening files)
+[editor.file-picker]
+hidden = false                   # Shows hidden files in the file picker
+
+# Whitespace rendering settings
+[editor.whitespace.render]
+space   = "all"                  # Render spaces as dots
+tab     = "all"                  # Render tabs as arrows
+nbsp    = "none"                 # Do not render non-breaking spaces
+nnbsp   = "none"                 # Do not render non-breaking spaces
+newline = "all"                  # Render newlines explicitly
+
+# Whitespace characters representation
+[editor.whitespace.characters]
+space  = "."                      # Render space characters as dots
+tab    = "→"                      # Render tab characters as arrows
+tabpad = "→"                      # Pad tabs with dots
+
+# Indent guides configuration
+[editor.indent-guides]
+render = true                     # Show indent guides
+
+# Smart tab behavior configuration
+[editor.smart-tab]
+enable = false                    # Disable smart tabbing (whether to use tab for indentation or not)
+
+# Keybindings for normal mode
+[keys.normal]
+C-up          = "move_visual_line_up"      # Move up
+C-down        = "move_visual_line_down"    # Move down
+C-right       = "move_next_word_end"       # Move cursor to the end of the next word
+C-left        = "move_prev_word_start"     # Move cursor to the beginning of the previous word
+
+S-right       = "goto_line_end_newline"    # Move cursor to the end of the line, adding a newline
+S-left        = "goto_line_start"          # Move cursor to the beginning of the line
+S-up          = "goto_file_start"          # Move cursor to the beginning of the file
+S-down        = "goto_file_end"            # Move cursor to the end of the file
+
+C-z           = "undo"                     # Undo the last change
+C-y           = "redo"                     # Redo the last undone change
+del           = "kill_to_line_start"       # Delete from the cursor to the start of the line
+C-del         = "kill_to_line_end"         # Delete from the cursor to the end of the line
+
+# Keybindings for insert mode
+[keys.insert]
+C-up          = "move_visual_line_up"      # Move up
+C-down        = "move_visual_line_down"    # Move down
+C-right       = "move_next_word_end"       # Move cursor to the end of the next word
+C-left        = "move_prev_word_start"     # Move cursor to the beginning of the previous word
+
+S-right       = "goto_line_end_newline"    # Move cursor to the end of the line, adding a newline
+S-left        = "goto_line_start"          # Move cursor to the beginning of the line
+S-up          = "goto_file_start"          # Move cursor to the beginning of the file
+S-down        = "goto_file_end"            # Move cursor to the end of the file
+
+C-c           = "toggle_comments"          # Toggle comments for the selected text
+C-z           = "undo"                     # Undo the last change
+C-y           = "redo"                     # Redo the last undone change
+S-backspace   = "delete_word_backward"     # Delete the previous word
+del           = "kill_to_line_start"       # Delete from the cursor to the start of the line
+C-del         = "kill_to_line_end"         # Delete from the cursor to the end of the line
+
+# Keybindings for select mode
+[keys.select]
+C-a = "select_all"                         # Select all text
+y   = "yank_main_selection_to_clipboard"   # Yank (copy) the main selection to clipboard
