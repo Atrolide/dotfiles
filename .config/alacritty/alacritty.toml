@@ -14,3 +14,7 @@ style = "Bold"
 family = "mononoki Nerd Font"
 style = "Regular"
 
+# Remove if you don't want fastfetch on terminal launch
+[terminal.shell]
+program = "/bin/bash"
+args = ["-c", "fastfetch && bash"]
