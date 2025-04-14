@@ -1,5 +1,5 @@
 # Theme configuration
-theme = "ayu_dark"                # Sets the color theme of the editor
+theme = "varua"                # Sets the color theme of the editor
 
 # Editor settings
 [editor]
