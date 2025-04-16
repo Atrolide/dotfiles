@@ -37,7 +37,7 @@ bar_char_braille = '⣿'
 [style]
 bar_style = unicode
 noise_reduction = 60
-borders = off
+borders = on
 
 [effects]
 integral = 1
