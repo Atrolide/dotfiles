@@ -1,0 +1,145 @@
+@import "mocha.css";
+
+* {
+  font-family: "Mononoki Nerd Font";
+  font-size: 14px;
+  min-height: 0;
+}
+
+#waybar {
+  background-color: transparent;
+  color: @text;
+  border-radius: 12px;
+  margin: 5px;
+  padding: 0 8px;
+}
+
+window#waybar {
+  background-color: @base;
+  border: 1px solid @surface0;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Workspaces */
+#workspaces {
+  background-color: transparent;
+  margin: 4px 0;
+  padding: 0 6px;
+  border-radius: 8px;
+}
+
+#workspaces button {
+  color: @overlay2;
+  background: @surface0;
+  border-radius: 8px;
+  padding: 0 8px;
+  margin: 0 3px;
+  min-width: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+#workspaces button.active {
+  color: @sky;
+  background: @surface1;
+}
+
+#workspaces button.urgent {
+  color: @red;
+  animation: urgent-flash 2s infinite;
+}
+
+#workspaces button:hover {
+  color: @sapphire;
+  background: @surface1;
+}
+
+@keyframes urgent-flash {
+  0% { color: @red; }
+  50% { color: @surface2; }
+  100% { color: @red; }
+}
+
+/* Modules */
+.modules-left {
+  background-color: @surface0;
+  border-radius: 12px;
+  padding: 0 12px 0 8px;
+  margin: 4px 0 4px 4px;
+}
+
+.modules-center {
+  background-color: @surface0;
+  border-radius: 12px;
+  padding: 0 8px;
+  margin: 4px 0;
+}
+
+.modules-right {
+  background-color: @surface0;
+  border-radius: 12px;
+  padding: 0 8px 0 12px;
+  margin: 4px 4px 4px 0;
+}
+
+.module {
+  color: @text;
+  padding: 0 8px;
+  margin: 0 4px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.module:hover {
+  background-color: @surface1;
+}
+
+/* Specific modules */
+#network {
+  color: @lavender;
+}
+
+#network.disconnected {
+  color: @red;
+}
+
+#pulseaudio {
+  color: @maroon;
+}
+
+#pulseaudio.muted {
+  color: @overlay2;
+}
+
+#clock {
+  color: @blue;
+  font-weight: bold;
+}
+
+#custom-music {
+  color: @mauve;
+  font-style: italic;
+}
+
+#tray {
+  padding: 0 6px;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: @red;
+}
+
+tooltip {
+  background-color: @mantle;
+  border: 1px solid @surface0;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+tooltip label {
+  color: @text;
+}

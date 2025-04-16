@@ -1,0 +1,79 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 40,
+  "margin": "0 8 0 8",
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["custom/music"],
+  "modules-right": ["network", "pulseaudio", "clock", "tray"],
+
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "sort-by-name": true,
+    "format": "<span font='16px'>{icon}</span>",
+    "format-icons": {
+      "default": "",
+      "active": "",
+      "urgent": ""
+    },
+    "persistent_workspaces": {
+      "1": {},
+      "2": {},
+      "3": {},
+      "4": {},
+      "5": {}
+    }
+  },
+
+  "tray": {
+    "icon-size": 16,
+    "spacing": 8,
+    "padding": 4
+  },
+
+  "custom/music": {
+    "format": "<span foreground='#cba6f7'> </span> {}",
+    "escape": true,
+    "interval": 5,
+    "tooltip": false,
+    "exec": "playerctl metadata --format='{{ artist }} - {{ title }}'",
+    "exec-if": "playerctl status",
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl next",
+    "on-scroll-up": "playerctl previous",
+    "on-scroll-down": "playerctl next",
+    "max-length": 35
+  },
+
+  "clock": {
+    "timezone": "Europe/Warsaw",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format-alt": "<span foreground='#89b4fa'></span> {:%d/%m/%Y}",
+    "format": "<span foreground='#89b4fa'>󱑎</span> {:%H:%M}",
+    "format-calendar": "<span color='#cdd6f4'>{:%Y-%m-%d}</span>",
+    "format-calendar-weeks": "<span color='#a6e3a1'>{: weeks=%V}</span>"
+  },
+
+  "pulseaudio": {
+    "format": "<span foreground='#eba0ac'>{icon}</span> {volume}%",
+    "format-muted": "<span foreground='#6c7086'></span>",
+    "format-icons": {
+      "default": [" ", " ", " "],
+      "muted": ""
+    },
+    "scroll-step": 5,
+    "on-click": "pavucontrol",
+    "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+  },
+
+  "network": {
+    "format-wifi": "<span foreground='#b4befe'> </span> {essid}",
+    "format-ethernet": "<span foreground='#b4befe'> </span> {ifname}",
+    "format-disconnected": "<span foreground='#f38ba8'>⚠ </span> Offline",
+    "format-alt": "<span foreground='#b4befe'> </span> {ipaddr}",
+    "tooltip-format": "{ifname}\nIP: {ipaddr}",
+    "interval": 5,
+    "on-click-right": "nm-connection-editor",
+    // "on-click-right": "alacritty -e nmtui"
+  }
+}
