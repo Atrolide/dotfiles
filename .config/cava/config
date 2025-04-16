@@ -10,7 +10,6 @@ mono = 1
 method = pulse
 
 [color]
-background = '#1e1e2e' ; base
 foreground = '#cdd6f4' ; text
 
 gradient = 1
