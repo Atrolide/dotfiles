@@ -4,10 +4,13 @@
 This directory contains user-specific configuration files for various applications including:  
 
 - `alacritty`
+- 'cava'
 - `fastfetch`
 - `helix` 
 - `hyprland`
+- 'mako'
 - `swaylock`
+- 'waybar'
 - `wofi`  
 
 ## Symlinking
