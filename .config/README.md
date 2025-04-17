@@ -9,9 +9,9 @@ This directory contains user-specific configuration files for various applicatio
 - `helix` 
 - `hyprland`
 - `mako`
+- `rofi`
 - `swaylock`
 - `waybar`
-- `wofi`  
 
 ## Symlinking
 
