@@ -8,8 +8,7 @@ clock
 timestr=%H:%M:%S
 datestr=%Y/%m/%d
 
-# Display current wallpaper as background
-image=~/Pictures/Makima.jpg
+image=~/Pictures/Wallpapers/Static/3440x1440/Makima2.jpg
 
 
 effect-blur=20x2
