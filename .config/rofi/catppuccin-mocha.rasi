@@ -1,28 +1,183 @@
+@import "catppuccin-mocha-palette"
+
 * {
-  rosewater: #f5e0dc;
-  flamingo: #f2cdcd;
-  pink: #f5c2e7;
-  mauve: #cba6f7;
-  red: #f38ba8;
-  maroon: #eba0ac;
-  peach: #fab387;
-  yellow: #f9e2af;
-  green: #a6e3a1;
-  teal: #94e2d5;
-  sky: #89dceb;
-  sapphire: #74c7ec;
-  blue: #89b4fa;
-  lavender: #b4befe;
-  text: #cdd6f4;
-  subtext1: #bac2de;
-  subtext0: #a6adc8;
-  overlay2: #9399b2;
-  overlay1: #7f849c;
-  overlay0: #6c7086;
-  surface2: #585b70;
-  surface1: #45475a;
-  surface0: #313244;
-  base: #1e1e2e;
-  mantle: #181825;
-  crust: #11111b;
-  }
+    /* ===== Color Definitions ===== */
+    background-color:           @base;
+    foreground:                 @flamingo;
+    border-color:               @surface1;
+    separatorcolor:             @surface1;
+    scrollbar-handle:           @mauve;
+    
+    /* ===== Text Styles ===== */
+    text-color:                 @flamingo;
+    text-color-select:          @base;
+    placeholder-color:          @overlay1;
+    highlight:                  bold underline;
+    
+    /* ===== Element States ===== */
+    /* Normal State */
+    normal-foreground:          @flamingo;
+    normal-background:          @base;
+    
+    /* Active State */
+    active-foreground:          @blue;
+    active-background:          @base;
+    
+    /* Urgent State */
+    urgent-foreground:          @red;
+    urgent-background:          @base;
+    
+    /* Selected States */
+    selected-normal-foreground: @base;
+    selected-normal-background: @mauve;
+    selected-active-foreground: @base;
+    selected-active-background: @blue;
+    selected-urgent-foreground: @base;
+    selected-urgent-background: @red;
+    
+    /* Alternate States */
+    alternate-normal-foreground: @flamingo;
+    alternate-normal-background: @base;
+    alternate-active-foreground: @blue;
+    alternate-active-background: @base;
+    alternate-urgent-foreground: @red;
+    alternate-urgent-background: @base;
+    
+    /* ===== Layout & Spacing ===== */
+    spacing:                    2;
+    margin:                     0px;
+    padding:                    8px;
+    border:                     1px;
+    border-radius:              8px;
+    element-padding:            4px 8px;
+    
+    /* ===== Window Properties ===== */
+    width:                      30%;
+    lines:                      8;
+    fixed-height:               true;
+}
+
+window {
+    background-color:           @base;
+    border:                     1px;
+    border-color:               @surface1;
+    border-radius:              12px;
+    padding:                    8px;
+}
+
+mainbox {
+    border:                     0px;
+    padding:                    8px;
+}
+
+inputbar {
+    children:                   [ prompt, entry ];
+    background-color:           @surface0;
+    border-radius:              8px;
+    padding:                    4px;
+    margin:                     0px 0px 4px 0px;
+}
+
+prompt, entry {
+    background-color:           inherit;
+    text-color:                inherit;
+    placeholder: "Search:";
+}
+
+listview {
+    fixed-height:              true;
+    dynamic:                   true;
+    scrollbar:                 true;
+    spacing:                   4px;
+    padding:                   0px;
+    margin:                    0px;
+}
+
+element {
+    background-color:          transparent;
+    text-color:                inherit;
+    border-radius:             4px;
+    padding:                   4px 8px;
+}
+
+/* Element State Variants */
+element.normal.normal {
+    background-color:          transparent;
+    text-color:                @flamingo;
+}
+
+element.normal.active {
+    background-color:          transparent;
+    text-color:                @blue;
+}
+
+element.normal.urgent {
+    background-color:          transparent;
+    text-color:                @red;
+}
+
+element.selected.normal {
+    background-color:          @mauve;
+    text-color:                @base;
+}
+
+element.selected.active {
+    background-color:          @blue;
+    text-color:                @base;
+}
+
+element.selected.urgent {
+    background-color:          @red;
+    text-color:                @base;
+}
+
+/* Removed alternate styling to maintain consistent colors */
+element.alternate.normal {
+    background-color:          transparent;
+    text-color:                @peach;
+}
+
+element.alternate.active {
+    background-color:          transparent;
+    text-color:                @blue;
+}
+
+element.alternate.urgent {
+    background-color:          transparent;
+    text-color:                @red;
+}
+
+/* Scrollbar Styling */
+scrollbar {
+    handle-color:              @mauve;
+    handle-width:              4px;
+    border-radius:             2px;
+}
+
+/* Mode Switcher */
+mode-switcher {
+    background-color:          @surface0;
+    border-radius:             0px 0px 8px 8px;
+    margin:                    4px 0px 0px 0px;
+}
+
+/* Button Styles */
+button {
+    padding:                   4px 8px;
+    background-color:          transparent;
+    text-color:               @flamingo;
+    border-radius:             4px;
+}
+
+button.selected {
+    background-color:          @mauve;
+    text-color:                @base;
+}
+
+/* Message Box */
+message {
+    background-color:          @surface0;
+    border-radius:             8px;
+    margin:                    4px 0px 0px 0px;
+    padding:                   8px;
+}

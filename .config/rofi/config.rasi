@@ -1,5 +1,21 @@
-@import "theme"
+@import "catppuccin-mocha"
 
 configuration {
-	
+    modes: "window,drun,run,ssh";
+    
+    font: "mononoki Nerd Font 16";
+    show-icons: true;
+    icon-theme: "Papirus";
+    drun-display-format: "{icon} {name} {category}";
+    location: 0;
+    width: 55%;
+    
+    display-window: " 󰍹  Window ";
+    display-drun: "   Apps ";
+    display-run: "   Run ";
+    display-ssh: "   SSH ";
+    sidebar-mode: true;
+
+    disable-history: false;
+    terminal: "alacritty";
 }
