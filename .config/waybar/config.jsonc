@@ -5,7 +5,7 @@
   "margin": "0 8 0 8",
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["custom/music"],
-  "modules-right": ["custom/cheatsheet", "network", "pulseaudio", "clock", "tray"],
+  "modules-right": ["custom/updates", "custom/cheatsheet", "network", "pulseaudio", "clock", "tray"],
 
   "hyprland/workspaces": {
     "disable-scroll": true,
@@ -77,9 +77,18 @@
     // "on-click-right": "alacritty -e nmtui"
   },
 
-"custom/cheatsheet": {
+  "custom/cheatsheet": {
     "format": "<span foreground='#f9e2af'>  Cheatsheet</span>",
     "tooltip": false,
     "on-click": "bash -c 'rofi -e \"$(cat ~/.config/rofi/cheatsheet.txt && printf \"\\\\n \")\" -theme ~/.config/rofi/cheatsheet.rasi'"
-}
+  },
+
+  "custom/updates": {
+    "format": "<span foreground='#a6e3a1'>󰚰</span> {}",
+        "interval": 3600,  // Check every hour (adjust as needed)
+    "exec": "pacman -Qu | wc -l",
+    "on-click": "alacritty -e sudo pacman -Syu",
+    "tooltip": false
   }
+  
+}
