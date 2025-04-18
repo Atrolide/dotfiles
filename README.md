@@ -23,3 +23,7 @@ Personal configuration for EndeavourOS (Arch Linux) with Hyprland Wayland compos
 
 ### _Helix_
 <img src="assets/helix.png" alt="helix">
+
+## Videos
+### _Swaylock_
+https://github.com/user-attachments/assets/00db8fe5-67b2-4fdb-8dbc-174d322d57e5
