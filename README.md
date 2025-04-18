@@ -2,7 +2,7 @@
 
 Personal configuration for EndeavourOS (Arch Linux) with Hyprland Wayland compositor.
 
-## Screenshots
+## Screenshots & Videos
 ### _Alacritty_ • _Fastfetch_
 <img src="assets/fastfetch.png" alt="fastfetch">
 <img src="assets/alacritty.png" alt="alacritty">
@@ -18,12 +18,10 @@ Personal configuration for EndeavourOS (Arch Linux) with Hyprland Wayland compos
 <img src="assets/mako_closeup.png" alt="mako_closeup">
 
 ### _Cava_
-<img src="assets/cava.png" alt="cava">
-
+https://github.com/user-attachments/assets/5372139e-a29e-4684-9326-eeacc61aa1e6
 
 ### _Helix_
 <img src="assets/helix.png" alt="helix">
 
-## Videos
 ### _Swaylock_
 https://github.com/user-attachments/assets/00db8fe5-67b2-4fdb-8dbc-174d322d57e5
