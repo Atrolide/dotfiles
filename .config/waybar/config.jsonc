@@ -5,7 +5,7 @@
   "margin": "0 8 0 8",
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["custom/music"],
-  "modules-right": ["network", "pulseaudio", "clock", "tray"],
+  "modules-right": ["custom/cheatsheet", "network", "pulseaudio", "clock", "tray"],
 
   "hyprland/workspaces": {
     "disable-scroll": true,
@@ -75,5 +75,11 @@
     "interval": 5,
     "on-click-right": "nm-connection-editor",
     // "on-click-right": "alacritty -e nmtui"
-  }
+  },
+
+"custom/cheatsheet": {
+    "format": "<span foreground='#f9e2af'>  Cheatsheet</span>",
+    "tooltip": false,
+    "on-click": "bash -c 'rofi -e \"$(cat ~/.config/rofi/cheatsheet.txt && printf \"\\\\n \")\" -theme ~/.config/rofi/cheatsheet.rasi'"
 }
+  }

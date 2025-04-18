@@ -1,0 +1,26 @@
+@import "catppuccin-mocha"
+
+* {
+    font: "mononoki Nerd Font 14";
+    background-color: @base;
+    text-color: @flamingo;
+}
+
+window {
+    width: 40%;
+    location: center;
+    anchor: center;
+    x-offset: 0;
+    y-offset: 0;
+}
+
+message {
+    horizontal-align: 0.5;
+    padding: 10px;
+    text-color: @mauve;
+}
+
+textbox {
+    expand: false;
+    horizontal-align: 0.5;
+}
