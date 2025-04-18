@@ -19,3 +19,7 @@ Personal configuration for EndeavourOS (Arch Linux) with Hyprland Wayland compos
 
 ### _Cava_
 <img src="assets/cava.png" alt="cava">
+
+
+### _Helix_
+<img src="assets/helix.png" alt="helix">
