@@ -18,10 +18,10 @@ Personal configuration for EndeavourOS (Arch Linux) with Hyprland Wayland compos
 <img src="assets/mako_closeup.png" alt="mako_closeup">
 
 ### _Cava_
-https://github.com/user-attachments/assets/0b57b6cd-0696-4a2b-a762-7b8bff5cc34d
+https://github.com/user-attachments/assets/97cd23ee-743a-4edc-93e0-4282c3499481
 
 ### _Helix_
 <img src="assets/helix.png" alt="helix">
 
 ### _Swaylock_
-https://github.com/user-attachments/assets/00db8fe5-67b2-4fdb-8dbc-174d322d57e5
+https://github.com/user-attachments/assets/21fee61a-faf1-4647-a68d-38264b0382aa
