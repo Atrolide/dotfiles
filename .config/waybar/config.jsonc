@@ -85,7 +85,7 @@
 
   "custom/updates": {
     "format": "<span foreground='#a6e3a1'>󰚰</span> {}",
-        "interval": 3600,  // Check every hour (adjust as needed)
+    "interval": 3600,  // Check every hour (adjust as needed)
     "exec": "pacman -Qu | wc -l",
     "on-click": "alacritty -e sudo pacman -Syu",
     "tooltip": false
