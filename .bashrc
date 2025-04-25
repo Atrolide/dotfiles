@@ -4,9 +4,9 @@
 [[ $- != *i* ]] && return
 
 # ===== Aliases =====
-alias ls='lsd -1 --blocks name,permission,git,size --color=always'
+alias ls='lsd -l'
 alias la='ls -A'
-alias ll='ls -l'
+alias ll='lsd -l'
 alias tree='lsd --tree -A --ignore-glob ".git"'
 alias grep='grep --color=auto'
 alias hx='helix'

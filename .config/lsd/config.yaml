@@ -1,2 +1,16 @@
 color:
   theme: custom
+  when: always
+
+layout: oneline
+
+icons:
+  theme: fancy
+  when: always
+  separator: " "
+
+blocks:
+  - name
+  - permission
+  - git
+  - size
