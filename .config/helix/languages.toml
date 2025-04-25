@@ -5,3 +5,10 @@ file-types = ["c", "h"]
 indent = { tab-width = 4, unit = "    " }
 formatter = { command = "clang-format" }
 auto-format = true
+
+[[language]]
+name = "latex"
+scope = "source.tex"
+file-types = ["tex"]
+formatter = { command = "latexindent", args = ["-"] }
+auto-format = true
