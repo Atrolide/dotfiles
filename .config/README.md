@@ -1,4 +1,4 @@
-# .config Directory
+# `.config` Directory
 
 ## Overview  
 This directory contains user-specific configuration files for various applications including:  
