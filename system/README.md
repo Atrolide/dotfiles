@@ -1,4 +1,4 @@
-# .config Directory
+# `system` Directory
 
 ## Overview  
 This directory contains system-wide configuration files for various applications including:  
