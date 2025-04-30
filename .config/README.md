@@ -8,6 +8,7 @@ This directory contains user-specific configuration files for various applicatio
 - `fastfetch`
 - `helix` 
 - `hyprland`
+- `lsd`
 - `mako`
 - `rofi`
 - `swaylock`
@@ -24,7 +25,7 @@ mv ~/.config/<PACKAGE_NAME> ~/.config/<PACKAGE_NAME>.bak
 
 ### Create a symlink:  
 ```bash
-ln -s /path/to/this/repo/<PACKAGE_NAME> ~/.config/<PACKAGE_NAME>
+ln -s /path/to/this/repo/.config/<PACKAGE_NAME> ~/.config/<PACKAGE_NAME>
 ```
 
 ### (Optional) Check if the link was successfull:
