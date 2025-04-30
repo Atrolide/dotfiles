@@ -42,7 +42,7 @@
     "on-click-right": "playerctl next",
     "on-scroll-up": "playerctl previous",
     "on-scroll-down": "playerctl next",
-    "max-length": 35
+    "max-length": 60
   },
 
   "clock": {
@@ -73,8 +73,7 @@
     "format-alt": "<span foreground='#b4befe'> </span> {ipaddr}",
     "tooltip-format": "{ifname}\nIP: {ipaddr}",
     "interval": 5,
-    "on-click-right": "nm-connection-editor",
-    // "on-click-right": "alacritty -e nmtui"
+    "on-click-right": "alacritty -e nmtui"
   },
 
   "custom/cheatsheet": {
