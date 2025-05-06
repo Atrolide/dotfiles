@@ -1,5 +1,5 @@
 general.import = [
-  "~/.dotfiles/.config/alacritty/catpuccin-mocha.toml"
+  "catpuccin-mocha.toml"
 ]
 
 [env]
