@@ -4,7 +4,7 @@ scope = "source.python"
 file-types = ["py", "py3"]
 indent = { tab-width = 4, unit = "    " }
 formatter = { command = "ruff", args = ["format", "-"] }
-auto-format = truei
+auto-format = true
 
 [[language]]
 name = "c"
@@ -19,4 +19,12 @@ name = "latex"
 scope = "source.tex"
 file-types = ["tex"]
 formatter = { command = "latexindent", args = ["-"] }
+auto-format = true
+
+[[language]]
+name = "json"
+scope = "source.json"
+file-types = ["json"]
+indent = { tab-width = 2, unit = "  " }
+formatter = { command = "jq", args = ["."] }
 auto-format = true
