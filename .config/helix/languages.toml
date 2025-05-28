@@ -1,4 +1,12 @@
 [[language]]
+name = "python"
+scope = "source.python"
+file-types = ["py", "py3"]
+indent = { tab-width = 4, unit = "    " }
+formatter = { command = "ruff", args = ["format", "-"] }
+auto-format = truei
+
+[[language]]
 name = "c"
 scope = "source.c"
 file-types = ["c", "h"]
