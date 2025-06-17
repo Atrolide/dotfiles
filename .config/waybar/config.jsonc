@@ -62,8 +62,8 @@
       "muted": ""
     },
     "scroll-step": 5,
-    "on-click": "pavucontrol",
-    "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "on-click-right": "pavucontrol"
   },
 
   "network": {
@@ -84,8 +84,8 @@
 
   "custom/updates": {
     "format": "<span foreground='#a6e3a1'>󰚰</span> {}",
-    "interval": 3600,  // Check every hour (adjust as needed)
-    "exec": "pacman -Qu | wc -l",
+    "interval": 1800,  // Check every 30 minutes (adjust as needed)
+    "exec": "checkupdates | wc -l",
     "on-click": "alacritty -e sudo pacman -Syu",
     "tooltip": false
   }
