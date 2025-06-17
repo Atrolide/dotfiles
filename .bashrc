@@ -11,6 +11,8 @@ alias tree='lsd --tree -A --ignore-glob ".git"'
 alias grep='grep --color=auto'
 alias hx='helix'
 alias ..='cd ..'
+alias zathura='zathura --fork'
+alias open='zathura --fork --config-dir=~/.config/zathura/catppuccin-mocha'
 
 # ===== Prompt =====
 PS1='╭─\[\e[1;38;5;213m\]   \[\e[0m\]\[\e[1;38;5;117m\]\u\[\e[0m\]\[\e[1;38;5;213m\]@\[\e[0m\]\[\e[1;38;5;117m\]\h \[\e[0m\]\[\e[1;38;5;228m\]in \W \[\e[0m\]\n╰─\[\e[1;38;5;204m\] 󰘧 \[\e[0m\] '
