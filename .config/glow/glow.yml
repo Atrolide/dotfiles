@@ -1,0 +1,6 @@
+style: "dark"
+mouse: false
+pager: true
+width: 80
+all: true
+showLineNumbers: true
