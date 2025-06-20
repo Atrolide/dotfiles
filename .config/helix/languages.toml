@@ -28,3 +28,9 @@ file-types = ["json"]
 indent = { tab-width = 2, unit = "  " }
 formatter = { command = "jq", args = ["."] }
 auto-format = true
+
+[[language]]
+name = "yaml"
+file-types = ["yaml", "yml"]
+formatter = { command = "yamlfmt", args = ["-"] }
+auto-format = true
