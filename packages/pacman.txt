@@ -4,3 +4,15 @@ ttf-mononoki-nerd
 
 # lsd
 lsd
+
+# hypr
+alacritty
+bind
+firefox
+grim
+hyprland
+hyprlock
+hyprpaper
+rofi
+slurp
+waybar
