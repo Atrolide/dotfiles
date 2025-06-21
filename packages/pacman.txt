@@ -16,3 +16,9 @@ hyprpaper
 rofi
 slurp
 waybar
+
+# rofi
+rofi
+
+# helix
+helix
