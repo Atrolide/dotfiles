@@ -1,8 +1,8 @@
 PACMAN_LIST := packages/pacman.txt
 YAY_LIST    := packages/yay.txt
 
-PACMAN_CMD := sudo pacman -S --needed
-YAY_CMD    := yay -S --needed
+PACMAN_CMD := sudo pacman -S --needed --noconfirm
+YAY_CMD    := yay -S --needed --noconfirm
 
 TOOLS := alacritty helix cava fastfetch glow hypr lsd mako rofi waybar zathura
 
