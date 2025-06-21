@@ -32,6 +32,9 @@ mako
 # rofi
 rofi
 
+# sddm
+sddm
+
 # waybar
 alacritty
 hyprland
