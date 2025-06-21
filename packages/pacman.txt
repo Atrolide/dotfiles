@@ -1,3 +1,6 @@
 # alacritty
 alacritty
 ttf-mononoki-nerd
+
+# lsd
+lsd
