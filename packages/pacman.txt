@@ -7,7 +7,6 @@ lsd
 
 # hypr
 alacritty
-bind
 firefox
 grim
 hyprland
