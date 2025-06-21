@@ -3,6 +3,9 @@ alacritty
 fastfetch
 ttf-mononoki-nerd
 
+# cava
+cava
+
 # fastfetch
 fastfetch
 
