@@ -14,3 +14,8 @@ cp /path/to/this/repo/system/etc/sddm.conf /etc/sddm.conf
 
 cp -r /path/to/this/repo/system/usr/share/sddm/themes/catppuccin-mocha/ /usr/share/sddm/themes/catppuccin-mocha
 ````
+
+## Enabling SDDM on startup
+```bash
+sudo systemctl enable sddm.service
+```

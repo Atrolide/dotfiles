@@ -4,7 +4,7 @@ YAY_LIST    := packages/yay.txt
 PACMAN_CMD := sudo pacman -S --needed --noconfirm
 YAY_CMD    := yay -S --needed --noconfirm
 
-TOOLS := alacritty helix cava fastfetch glow hypr lsd mako rofi waybar zathura
+TOOLS := alacritty helix cava fastfetch glow hypr lsd mako rofi sddm waybar zathura
 
 .PHONY: all $(TOOLS)
 
