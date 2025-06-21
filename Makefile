@@ -16,10 +16,11 @@ all: $(TOOLS)
 
 define INSTALL_SECTION
 	@echo "==> Installing pacman packages for $(1)..."
-	@awk '/^# $(1)$$/{flag=1; next} /^# /{flag=0} flag && NF' $(PACMAN_LIST) | xargs -r $(PACMAN_CMD)
+	@awk '/^# $(1)$$/ {flag=1; next} /^# / {flag=0} flag && NF' $(PACMAN_LIST) | xargs -r $(PACMAN_CMD)
 	@echo "==> Installing yay packages for $(1)..."
-	@awk '/^# $(1)$$/{flag=1; next} /^# /{flag=0} flag && NF' $(YAY_LIST) | xargs -r $(YAY_CMD)
+	@awk '/^# $(1)$$/ {flag=1; next} /^# / {flag=0} flag && NF' $(YAY_LIST) | xargs -r $(YAY_CMD)
 endef
+
 
 # === AUTO-GENERATED TOOL TARGETS ===
 $(foreach tool,$(TOOLS),$(eval $(tool): ; $(call INSTALL_SECTION,$(tool))))
