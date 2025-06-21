@@ -3,8 +3,11 @@ alacritty
 fastfetch
 ttf-mononoki-nerd
 
-# lsd
-lsd
+# fastfetch
+fastfetch
+
+# helix
+helix
 
 # hypr
 alacritty
@@ -17,8 +20,19 @@ rofi
 slurp
 waybar
 
+# lsd
+lsd
+
+# mako
+mako
+
 # rofi
 rofi
 
-# helix
-helix
+# waybar
+alacritty
+hyprland
+pavucontrol
+rofi
+waybar
+
