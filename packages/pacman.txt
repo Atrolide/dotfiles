@@ -1,0 +1,3 @@
+# alacritty
+alacritty
+ttf-mononoki-nerd
