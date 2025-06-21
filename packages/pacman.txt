@@ -1,5 +1,6 @@
 # alacritty
 alacritty
+fastfetch
 ttf-mononoki-nerd
 
 # lsd
