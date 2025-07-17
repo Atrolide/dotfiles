@@ -1,24 +1,9 @@
 [[language]]
-name = "python"
-scope = "source.python"
-file-types = ["py", "py3"]
-indent = { tab-width = 4, unit = "    " }
-formatter = { command = "ruff", args = ["format", "-"] }
-auto-format = true
-
-[[language]]
 name = "c"
 scope = "source.c"
 file-types = ["c", "h"]
 indent = { tab-width = 4, unit = "    " }
 formatter = { command = "clang-format" }
-auto-format = true
-
-[[language]]
-name = "latex"
-scope = "source.tex"
-file-types = ["tex"]
-formatter = { command = "latexindent", args = ["-"] }
 auto-format = true
 
 [[language]]
@@ -30,7 +15,38 @@ formatter = { command = "jq", args = ["."] }
 auto-format = true
 
 [[language]]
+name = "latex"
+scope = "source.tex"
+file-types = ["tex"]
+formatter = { command = "latexindent", args = ["-"] }
+auto-format = true
+
+[[language]]
+name = "lua"
+scope = "source.lua"
+file-types = ["lua"]
+indent = { tab-width = 2, unit = "  " }
+formatter = { command = "stylua", args = ["-"] }
+auto-format = true
+
+[[language]]
+name = "python"
+scope = "source.python"
+file-types = ["py", "py3"]
+indent = { tab-width = 4, unit = "    " }
+formatter = { command = "ruff", args = ["format", "-"] }
+auto-format = true
+
+[[language]]
 name = "yaml"
 file-types = ["yaml", "yml"]
-formatter = { command = "yamlfmt", args = ["-"] }
+formatter = { command = "prettier", args = ["--parser", "yaml"] }
+auto-format = true
+
+[[language]]
+name = "hcl"
+scope = "source.hcl"
+file-types = ["tf", "tfvars", "hcl"]
+formatter = { command = "terraform", args = ["fmt", "-"] }
+language-servers = [ "terraform-ls" ]
 auto-format = true
